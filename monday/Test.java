@@ -27,12 +27,17 @@ public class Test{
         System.out.println(Arrays.toString(messages));
 
 
-        ArrayList<String> todoList = new ArrayList<String>();
+        ArrayList<> todoList = new ArrayList<>();
         todoList.add("Finish Alfred Bot");
         todoList.add("Finish Cafe bussiness logic");
         todoList.add("Read ahead for oop");
 
-        voiceMessage.printMessages(todoList);
+        for(int i = 0 ; i< todoList.size(); i++){
+            Object test = todoList.get(i);
+            System.out.println("testing" + test.getClass());
+        }
+
+        // voiceMessage.printMessages(todoList);
 
 
         // type casting
